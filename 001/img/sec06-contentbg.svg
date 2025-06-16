@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="302" height="77" viewBox="0 0 302 77">
+  <defs>
+    <filter id="パス_6" x="0" y="0" width="302" height="77" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-color="#fd9a00"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#パス_6)">
+    <g id="パス_6-2" data-name="パス 6" fill="#fff">
+      <path d="M 258.4189147949219 73.5 L 1.5 73.5 L 1.5 1.5 L 297.479736328125 1.5 L 258.4189147949219 73.5 Z" stroke="none"/>
+      <path d="M 3 3 L 3 72 L 257.5260925292969 72 L 294.9594116210938 3 L 3 3 M 0 0 L 300 0 L 259.3116149902344 75 L 0 75 L 0 0 Z" stroke="none" fill="#202d5b"/>
+    </g>
+  </g>
+</svg>
