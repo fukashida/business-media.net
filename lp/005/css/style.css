@@ -1,0 +1,85 @@
+body{
+    width: 100%;
+    max-width: 1080px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #4594c0;
+}
+
+.hyoushi{
+    background-color: #4594c0;
+    width: 100%;
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.head_text{
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+.hyoushi_img_area {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hyoushi_img_haikei {
+    position: absolute;
+    top: 15%;
+    transform: translateX(-50%, -50%);
+    z-index: 1;
+    width: 100%;
+}
+
+.hyoushi_img_front {
+    position: relative;
+    top: 50%;
+    transform: translateX(-50%, -50%);
+    z-index: 2;
+    width: 60%;
+}
+
+.start_button_area{
+    padding-top: 20px;
+}
+
+.start_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin:0 auto;
+    padding: .9em 0.3em;
+    border: 2px solid #333333;
+    border-radius: 20px;
+    background-color: #d08025;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.85em;
+}
+
+.start_button:hover {
+    background-color: #c07015;
+}
+
+.privacyPolicyArea{
+    margin: 40px;
+}
+
+.privacyPolicy{
+    color: white;
+    font-size: 0.7em;
+}

@@ -1,0 +1,132 @@
+body{
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+img{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    background: #2589d0;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    padding: 15px 13px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.question_lists{
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.question{
+    margin: 30px 10px;
+    font-size: 1em;
+}
+
+.shindan_text{
+    text-align: left;
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.checkbox-2 {
+    border: none;
+    text-align: center;
+}
+
+.checkbox-2 label {
+    align-items: center;
+    gap: 0 .5em;
+    position: relative;
+    max-width: 200px;
+    margin: auto 10px;
+    margin-bottom: .4em;
+    padding: .5em 55px;
+    border: 2px solid #2589d0;
+    border-radius: 25px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.checkbox-2 label:has(:checked) {
+    background-color: #2589d0;
+    color: #fff;
+}
+
+.checkbox-2 label::before {
+    width: 14px;
+    height: 14px;
+    border-radius: 1px;
+    background-color: #fff;
+    content: '';
+}
+
+.checkbox-2 label:has(:checked)::after {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    transform: rotate(45deg);
+    width: 4px;
+    height: 8px;
+    border: solid #2589d0;
+    border-width: 0 2px 2px 0;
+}
+
+.checkbox-2 input {
+    display: none;
+}
+
+.result_button_area{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.result_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin:0 auto;
+    padding: .9em 2em;
+    border: 2px solid #333333;
+    border-radius: 20px;
+    background-color: #808080;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.button-enabled {
+    background-color: #d08025;
+    color: white;
+}

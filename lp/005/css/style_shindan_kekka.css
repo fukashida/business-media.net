@@ -1,0 +1,363 @@
+body{
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header {
+    color: black;
+    padding: 20px;
+}
+
+
+.header h1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    padding: .8em 1.2em;
+    border: 3px solid #333333;
+    background-color: #FFFF00;
+    color: #333333;
+    max-width: 80%;
+    font-size: 1.2em;
+}
+
+.header h1::before,
+.header h1::after {
+    position: absolute;
+    bottom: -15px;
+    width: 30px;
+    height: 15px;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    content: '';
+}
+
+.header h1::before {
+    background-color: #333333;
+}
+
+.header h1::after {
+    bottom: -11px;
+    background-color: #FFFF00;
+}
+
+.header h2 {
+    margin: 10px 0;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.header p {
+    margin: 0;
+    font-size: 0.75em;
+}
+
+.question {
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: linear-gradient(transparent 60%, rgb(255, 255, 255) 30%);
+    font-size: 0.8em;
+    width: 280px;
+}
+
+.kyoukan{
+    position: absolute;
+    top: 370px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    width: 300px;
+    font-size: 0.7em;
+    margin: 5px auto;
+}
+
+.illustration {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.illustration img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.hukugyo_counseling{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ffffff;
+    color: #323232;
+}
+
+.sanka_houhou {
+    position: relative;
+    max-width: 100%;
+    margin: 1.9em auto;
+    margin-bottom: -0.5em;
+    padding: 0.5em 0.5em;
+    border: 5px solid #ffe300;
+    color: #333;
+    background-color: #ffffff;
+    
+}
+
+.sannka_houhou_content{
+    display: flex;
+}
+
+.sanka_houhou h3{
+    font-size: 2em;
+    margin: 10px auto;
+    background: linear-gradient(transparent 60%, #f7ef04c7 30%);
+    width: 180px;
+}
+
+.text_column{
+    flex: 1;
+    padding-right: 10px;
+    text-align: left;
+    justify-content: space-between;
+    font-size: 0.8em;
+}
+
+.sumaho{
+    flex: 1;
+    padding: 5px;
+    width: 9em;
+    padding-top: 40px;
+}
+
+.regist_button_area{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+}
+
+.gentei{
+    color: #ff0000;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.gentei_area {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 200px;
+    padding: .8em 1.2em;
+    border: 3px solid #333333;
+    border-radius: 30px;
+    background-color: #fff;
+    color: #333333;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.gentei_area::before,
+.gentei_area::after {
+    position: absolute;
+    bottom: -15px;
+    left: 150px;
+    width: 30px;
+    height: 15px;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    content: '';
+}
+
+.gentei_area::before {
+    background-color: #333333;
+}
+
+.gentei_area::after {
+    bottom: -11px;
+    background-color: #fff;
+}
+
+.regist_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: .9em 2em;
+    border: none;
+    border-bottom: solid 5px #025602;
+    border-radius: 5px;
+    background-color: #00b900;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1em;
+    transition: .5s ease;
+    
+}
+
+.regist_button:active {
+  /*ボタンを押したとき*/
+  transform: translateY(3px);
+  border-bottom-width: 2px;
+}
+
+@keyframes animation-button-10 {
+    17% {
+        left: 120%;
+    }
+    100% {
+        left: 120%;
+    }
+}
+
+.counseling{
+    color: #fff200;
+    font-size: 25px;
+}
+
+.bunsho{
+    font-size: 17px;
+}
+
+.sanka{
+    color: #fff200;
+    font-size: 1.5em;
+}
+
+.sanka_sumaho{
+    width: 100%;
+    max-width: 500px;
+}
+
+.warning{
+    width: 100%;
+    max-width: 500px;
+    background-color: #FFE300;
+    color: #333;
+}
+
+.font_red{
+    color: red;
+    font-weight: bold;
+}
+
+.button_img{
+    width: 100%;
+}
+
+#circle {
+    background: #333;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.circle_mark{
+    font-size: 60px;
+}
+
+/* 角に黒丸を追加するCSS */
+.corner-circles-top {
+    position: relative;
+  }
+  
+.corner-circles-top::before,
+.corner-circles-top::after
+ {
+    content: '';
+    position: absolute;
+    width: 7px; /* 丸の大きさ */
+    height: 7px; /* 丸の大きさ */
+    background-color: black; /* 丸の色 */
+    border-radius: 50%; /* 丸形にする */
+}
+  
+/* 左上の丸 */
+.corner-circles-top::before {
+    top: 0px; /* 丸の位置を調整 */
+    left: 3px; /* 丸の位置を調整 */
+}
+  
+/* 右上の丸 */
+.corner-circles-top::after {
+    top: 0px; /* 丸の位置を調整 */
+    right: 3px; /* 丸の位置を調整 */
+} 
+
+.corner-circles-bottom {
+    position: relative;
+  }
+  
+.corner-circles-bottom::before,
+.corner-circles-bottom::after
+ {
+    content: '';
+    position: absolute;
+    width: 7px; /* 丸の大きさ */
+    height: 7px; /* 丸の大きさ */
+    background-color: black; /* 丸の色 */
+    border-radius: 50%; /* 丸形にする */
+}
+  
+/* 左上の丸 */
+.corner-circles-bottom::before {
+    top: -10px; /* 丸の位置を調整 */
+    left: 3px; /* 丸の位置を調整 */
+}
+  
+/* 右上の丸 */
+.corner-circles-bottom::after {
+    top: -10px; /* 丸の位置を調整 */
+    right: 3px; /* 丸の位置を調整 */
+} 
+
+.tyui{
+    font-size: 17px;
+}
+
+.setumei{
+    background-color: #ffffff;
+    max-width: 500px;
+    width: 95%;
+    margin: 1.0em auto;
+}
+
+.setumei_bunsho{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.privacy_policy{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 0.7em;
+}
