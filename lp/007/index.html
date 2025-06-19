@@ -427,6 +427,36 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
 </script>
+<script src="./js/add_param.js"></script>
+<script>
+  // クエリパラメータを取得
+  document.addEventListener("DOMContentLoaded", () => {
+    const queryParams = getQueryParams();
+    console.log(queryParams);
+
+    // クエリパラメータをクッキーに保存
+    const params = getQueryParams();
+    const queryString = Object.keys(params)
+      .map(
+        (key) =>
+          encodeURIComponent(key) + "=" + encodeURIComponent(params[key])
+      )
+      .join("&");
+    if (queryString) {
+      localStorage.setItem("initial_query_params", queryString);
+    }
+
+    // クエリパラメータをaタグのボタンに追加
+    const aTags = document.querySelectorAll("a");
+    aTags.forEach((aTag) => {
+      aTag.addEventListener("click", (e) => {
+        e.preventDefault();
+        console.log(aTag.href);
+        redirectWithQueryParams(aTag.href);
+      });
+    });
+  });
+</script>   
     
     
   
