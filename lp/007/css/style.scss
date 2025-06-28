@@ -232,6 +232,20 @@ footer {
     & p {
         font-size: 14px;
         text-align: center;
+        line-height: 1;
+    }
+    & div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 5px;
+        & a {
+            font-size: 14px;
+            font-weight: normal;
+            color: #132442;
+            text-decoration-line: none;
+        }
     }
 }
 
