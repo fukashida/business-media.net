@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>動画編集.com | お支払いのご案内</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap');
+
+:root {
+  --c-bg: #F7F9FC;
+  --c-surface: #FFFFFF;
+  --c-border: #E6EAF2;
+  --c-text: #0F172A;
+  --c-sub: #64748B;
+  --c-trust: #4F46E5;
+  --c-trust-bg: #EEF2FF;
+  --c-trust-border: #E0E7FF;
+  --c-benefit: #059669;
+  --c-benefit-bg: #ECFDF5;
+  --c-benefit-border: #D1FAE5;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+  background:
+    radial-gradient(circle at 8% -10%, rgba(79, 70, 229, 0.07), transparent 42%),
+    radial-gradient(circle at 100% 30%, rgba(5, 150, 105, 0.06), transparent 42%),
+    var(--c-bg);
+  color: var(--c-text);
+  line-height: 1.7;
+}
+
+img, svg { display: block; }
+
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--c-trust);
+  outline-offset: 2px;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.site-header {
+  padding: 1.6rem 0 0.5rem;
+}
+
+.brand-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: var(--c-text);
+  text-decoration: none;
+}
+
+.brand-tag .dot {
+  color: var(--c-benefit);
+}
+
+h1 {
+  font-size: 2.1rem;
+  font-weight: 900;
+  line-height: 1.4;
+  margin: 0 0 0.6rem;
+  text-wrap: balance;
+}
+
+.lead {
+  font-size: 0.98rem;
+  color: var(--c-sub);
+  line-height: 1.85;
+  margin: 0.4rem 0 0;
+}
+
+.hero {
+  text-align: center;
+  padding-top: 1.2rem;
+  padding-bottom: 1.8rem;
+  border-bottom: 1px solid var(--c-border);
+}
+
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  background: var(--c-trust-bg);
+  border: 1px solid var(--c-trust-border);
+  color: var(--c-trust);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.hero h1 {
+  margin-top: 1.1rem;
+}
+
+.hero .lead {
+  max-width: 34rem;
+  margin: 0.8rem auto 0;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+.plan-card {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: 18px;
+  padding: 1.8rem 1.8rem;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+}
+
+.plan-card .plan-name {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--c-sub);
+  letter-spacing: 0.02em;
+}
+
+.plan-card .plan-price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  margin: 0.5rem 0 1.2rem;
+}
+
+.plan-card .plan-price .amount {
+  font-size: 2.1rem;
+  font-weight: 900;
+  color: var(--c-benefit);
+  font-variant-numeric: tabular-nums;
+}
+
+.plan-card .plan-price .period {
+  font-size: 0.9rem;
+  color: var(--c-sub);
+  font-weight: 600;
+}
+
+.plan-includes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  border-top: 1px solid var(--c-border);
+  padding-top: 1.1rem;
+}
+
+.plan-includes li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--c-text);
+}
+
+.plan-includes svg {
+  color: var(--c-benefit);
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 1.05rem 1.6rem;
+  border-radius: 999px;
+  background: var(--c-benefit);
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 1.02rem;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(5, 150, 105, 0.28);
+  border: none;
+  cursor: pointer;
+}
+
+.cta-wrap {
+  text-align: center;
+  margin-top: 1.6rem;
+}
+
+.cta-note {
+  margin-top: 0.7rem;
+  font-size: 0.82rem;
+  color: var(--c-sub);
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--c-sub);
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: var(--c-trust);
+}
+
+.site-footer {
+  text-align: center;
+  padding: 2rem 0 3rem;
+  font-size: 0.78rem;
+  color: var(--c-sub);
+}
+
+@media (max-width: 640px) {
+  h1 { font-size: 1.65rem; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header wrap">
+  <a href="#" class="brand-tag">動画編集<span class="dot">.com</span></a>
+</header>
+
+<main>
+
+  <section class="hero wrap">
+    <span class="badge-pill">お申し込み最終ステップ</span>
+    <h1>お支払いのご案内</h1>
+    <p class="lead">
+      初案件のご確定、おめでとうございます。<br>
+      以下のプラン内容をご確認のうえ、お支払いにお進みください。
+    </p>
+  </section>
+
+  <section class="wrap">
+    <div class="plan-card">
+      <div class="plan-name">動画編集.com メンバーシップ</div>
+      <div class="plan-price">
+        <span class="amount">¥3,000</span>
+        <span class="period">/ 月</span>
+      </div>
+      <ul class="plan-includes">
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>自社直振り案件への参加権</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>プロによる納品前フィードバック</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>クライアント対応・納品サポート</li>
+      </ul>
+    </div>
+
+    <div class="cta-wrap">
+      <a href="https://payment.alpha-note.co.jp/service/mailcredit/b57630fc62c048a79d5aab97354ccc29" class="cta-button">
+        お支払いに進む
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+      <p class="cta-note">お支払いは安全な決済ページに移動して行われます。</p>
+      <!-- TODO: 申込ページのURLが決まったら、下の href="#" を差し替えてください -->
+      <a href="#" class="back-link">← 申し込みページに戻る</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  運営：株式会社POWER
+</footer>
+
+</body>
+</html>
